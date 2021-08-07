@@ -1,0 +1,64 @@
+.review__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5fr 30px 3fr 1fr;
+  row-gap: 1rem;
+}
+
+.review__box:first-child {
+  background-image: url("../src/john.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.review__box:nth-child(2) {
+  background-image: url("../src/lucy.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.review__box:nth-child(3) {
+  background-image: url("../src/kyle.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.review__box:nth-child(4) h5,
+.review__box:nth-child(5) h5,
+.review__box:nth-child(6) h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.review__box:nth-child(7) p,
+.review__box:nth-child(8) p,
+.review__box:nth-child(9) p {
+  font-size: 1rem;
+  width: 90%;
+  line-height: 1.4rem;
+}
+
+.review__box:nth-child(10) i,
+.review__box:nth-child(11) i,
+.review__box:last-child i {
+  color: $primary-pink-light;
+  margin-right: 0.3rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.review__box:nth-child(10) span,
+.review__box:nth-child(11) span,
+.review__box:last-child span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

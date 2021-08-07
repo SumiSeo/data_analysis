@@ -1,0 +1,32 @@
+.review {
+  height: 100vh;
+  padding: 12rem 5rem;
+
+  &__column {
+    margin-left: 3rem;
+  }
+
+  &__column {
+    margin-bottom: 3rem;
+  }
+
+  &__header {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $font-color-grey;
+    letter-spacing: 0.9;
+    span {
+      background-color: $primary-pink-light;
+      padding: 0.4rem;
+      margin-left: 0.5rem;
+      color: white;
+    }
+  }
+  &__text {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: $font-color-grey;
+    width: 85%;
+    line-height: 2rem;
+  }
+}

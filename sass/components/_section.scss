@@ -1,0 +1,75 @@
+@import "../abstracts/variables";
+.section__first {
+  display: flex;
+  padding: 2rem 4rem;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+
+.section__column {
+  width: 50%;
+}
+.section__column:last-child {
+  position: relative;
+}
+
+.section__img {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  box-shadow: 0 1rem 6rem 1rem rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: scale(1.05);
+    z-index: 100;
+    outline-offset: 1rem;
+    outline: 1rem solid $primary-pink-light;
+    box-shadow: 0 1rem 6rem 1rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.section__img:first-child {
+  background-image: url("../src/student1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 18rem;
+  height: 12rem;
+  top: -3rem;
+}
+
+.section__img:nth-child(2) {
+  background-image: url("../src/student2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 18rem;
+  height: 12rem;
+  top: 1.5rem;
+  right: 1rem;
+}
+
+.section__img:nth-child(3) {
+  background-image: url("../src/student3.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 18rem;
+  height: 12rem;
+  top: 6rem;
+  left: 3rem;
+}
+
+.section__link:link,
+.section__link:visited {
+  color: $font-color-grey;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding-bottom: 4px;
+  font-weight: 500;
+  border-bottom: 1px solid $primary-pink-light;
+  // display: inline-block;
+  background-image: linear-gradient(
+    (to right bottom, $primary-pink-light, $primary-pink-dark)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
