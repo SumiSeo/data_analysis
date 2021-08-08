@@ -1,9 +1,15 @@
 .review {
   height: 100vh;
   padding: 12rem 5rem;
+  @include respond(tab-land) {
+    padding: 12rem 2rem;
+  }
 
   &__column {
     margin-left: 3rem;
+    @include respond(tab-land) {
+      margin-left: 0;
+    }
   }
 
   &__column {
