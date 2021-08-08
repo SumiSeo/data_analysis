@@ -295,7 +295,7 @@ main {
     opacity: 0; }
 
 .footer {
-  height: 80vh;
+  height: 50vh;
   margin-top: 15rem;
   padding: 0 5rem;
   background-color: #ed4c67; }
@@ -447,11 +447,11 @@ main {
 .feature__title {
   font-size: 1.1rem;
   color: #3d3d3d;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 2rem; }
 
 .feature__info {
-  font-size: 0.9rem; }
+  font-size: 1.04rem; }
 
 .review {
   height: 100vh;
@@ -488,7 +488,7 @@ main {
   background-position: center;
   background-size: cover;
   width: 350px;
-  height: 250px;
+  max-height: 250px;
   border-radius: 10px; }
 
 .review__box:nth-child(2) {
@@ -532,4 +532,23 @@ main {
 .review__box:nth-child(11) span,
 .review__box:last-child span {
   font-size: 1.1rem;
-  font-weight: 600; }
+  font-weight: 600;
+  position: relative; }
+  .review__box:nth-child(10) span::after,
+  .review__box:nth-child(11) span::after,
+  .review__box:last-child span::after {
+    display: inline-block;
+    content: "";
+    width: 0%;
+    height: 20%;
+    z-index: -10;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-size: 20%;
+    transition: all 0.2s ease-in; }
+  .review__box:nth-child(10) span:hover::after,
+  .review__box:nth-child(11) span:hover::after,
+  .review__box:last-child span:hover::after {
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #ed4c67, #b53471); }

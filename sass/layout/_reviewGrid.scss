@@ -10,7 +10,7 @@
   background-position: center;
   background-size: cover;
   width: 350px;
-  height: 250px;
+  max-height: 250px;
   border-radius: 10px;
 }
 
@@ -61,4 +61,25 @@
 .review__box:last-child span {
   font-size: 1.1rem;
   font-weight: 600;
+  position: relative;
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 0%;
+    height: 20%;
+    z-index: -10;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-size: 20%;
+    transition: all 0.2s ease-in;
+  }
+  &:hover::after {
+    width: 100%;
+    background-image: linear-gradient(
+      to right bottom,
+      $primary-pink-light,
+      $primary-pink-dark
+    );
+  }
 }
