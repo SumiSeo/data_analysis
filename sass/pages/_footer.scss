@@ -1,3 +1,60 @@
 .footer {
-  margin-top: 20rem 5rem;
+  height: 80vh;
+  margin-top: 15rem;
+  padding: 0 5rem;
+  background-color: $primary-pink-light;
+  &__header {
+    color: $font-color-grey;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 1.2px;
+  }
+  &__infos {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    color: $color-white;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.2rem;
+
+    input {
+      padding: 1.5rem 4rem;
+      border: none;
+      background-color: $color-white;
+      outline: none;
+      border-radius: 2px;
+      font-size: 1.1rem;
+      color: $font-color-grey;
+    }
+    select {
+      padding: 1.5rem 4rem;
+      border: none;
+      background-color: $color-white;
+      outline: none;
+      border-radius: 2px;
+      font-size: 1.1rem;
+      color: $font-color-grey;
+    }
+    button {
+      padding: 1.5rem 6rem;
+      border: none;
+      background-color: $primary-pink-dark;
+      outline: none;
+      border-radius: 2px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+    }
+  }
+}
+
+.footer__column--first {
+  padding-top: 5rem;
+  text-align: center;
 }

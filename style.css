@@ -172,13 +172,13 @@ body {
 .header__text {
   font-weight: 200;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #fff;
   letter-spacing: 8px;
   animation: slideRight 1.4s ease-in-out forwards; }
 
 .section__header {
-  font-size: 1.9rem;
+  font-size: 2.4rem;
   margin-top: 3rem;
   margin-bottom: 6rem;
   font-weight: 600;
@@ -207,7 +207,7 @@ body {
   background-color: #f7f7f7; }
 
 main {
-  padding: 10rem 0;
+  padding-top: 10rem;
   margin-top: -20vh; }
 
 .section__header--box {
@@ -295,7 +295,55 @@ main {
     opacity: 0; }
 
 .footer {
-  margin-top: 20rem; }
+  height: 80vh;
+  margin-top: 15rem;
+  padding: 0 5rem;
+  background-color: #ed4c67; }
+  .footer__header {
+    color: #3d3d3d;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 1.2px; }
+  .footer__infos {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    color: #fff; }
+  .footer__form {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.2rem; }
+    .footer__form input {
+      padding: 1.5rem 4rem;
+      border: none;
+      background-color: #fff;
+      outline: none;
+      border-radius: 2px;
+      font-size: 1.1rem;
+      color: #3d3d3d; }
+    .footer__form select {
+      padding: 1.5rem 4rem;
+      border: none;
+      background-color: #fff;
+      outline: none;
+      border-radius: 2px;
+      font-size: 1.1rem;
+      color: #3d3d3d; }
+    .footer__form button {
+      padding: 1.5rem 6rem;
+      border: none;
+      background-color: #b53471;
+      outline: none;
+      border-radius: 2px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1.1px; }
+
+.footer__column--first {
+  padding-top: 5rem;
+  text-align: center; }
 
 .section__first {
   display: flex;
@@ -336,7 +384,7 @@ main {
   width: 18rem;
   height: 12rem;
   top: 1.5rem;
-  right: 1rem; }
+  right: 3rem; }
 
 .section__img:nth-child(3) {
   background-image: url("../src/student3.jpg");
