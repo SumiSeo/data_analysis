@@ -9,17 +9,22 @@
   & > * {
     transform: skewY(7deg);
   }
+  @include respond(tab-land) {
+    margin-top: 4rem;
+  }
 }
 
 .feature__container {
   display: flex;
   padding: 0 4rem;
+  @include respond(tab-land) {
+    padding: 0 2rem;
+  }
 }
 .feature__box {
   width: 17rem;
   height: 20rem;
   padding: 4rem 2rem;
-
   background-color: rgba($color-white, 0.8);
   text-align: center;
   border-radius: 3px;
@@ -28,6 +33,9 @@
 
   &:not(:last-child) {
     margin-right: 3rem;
+    @include respond(tab-land) {
+      margin-right: 1rem;
+    }
   }
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);

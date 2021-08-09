@@ -22,10 +22,23 @@
       @content;
     }
   }
+  @if $breakpoint == port-land {
+    @media (max-width: 68.75em) {
+      //1100px
+      @content;
+    }
+  }
+
   @if $breakpoint ==tab-land {
     @media (max-width: 75em) {
       //1200px
       @content;
+    }
+  }
+  @if $breakpoint ==tab-desktop {
+    @media (max-width: 87.5em) {
+      @content;
+      //1400px
     }
   }
   @if $breakpoint == desktop {

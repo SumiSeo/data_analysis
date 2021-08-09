@@ -8,19 +8,24 @@
     padding: 2rem 1rem;
     gap: 1rem;
   }
-  @include respond(tab-port) {
-    width: 40%;
+  @include respond(port-land) {
+    flex-direction: column;
   }
 }
 
 .section__column {
   width: 50%;
-  @include respond(tab-port) {
+  @include respond(port-land) {
     width: 100%;
   }
 }
 .section__column:last-child {
   position: relative;
+  @include respond(port-land) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .section__img {
@@ -30,6 +35,10 @@
   @include respond(tab-land) {
     width: 15rem;
   }
+  @include respond(port-land) {
+    display: none;
+  }
+
   &:hover {
     transform: scale(1.05);
     z-index: 100;

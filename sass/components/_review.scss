@@ -1,14 +1,17 @@
 .review {
   height: 100vh;
   padding: 12rem 5rem;
-  @include respond(tab-land) {
+  @include respond(tab-desktop) {
     padding: 12rem 2rem;
+  }
+  @include respond(tab-land) {
+    padding: 12rem 0.5rem;
   }
 
   &__column {
     margin-left: 3rem;
     @include respond(tab-land) {
-      margin-left: 0;
+      margin-left: 2rem;
     }
   }
 

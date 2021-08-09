@@ -12,6 +12,9 @@
   width: 350px;
   max-height: 250px;
   border-radius: 10px;
+  @include respond(tab-land) {
+    width: 90%;
+  }
 }
 
 .review__box:nth-child(2) {
@@ -21,6 +24,9 @@
   width: 350px;
   height: 250px;
   border-radius: 10px;
+  @include respond(tab-land) {
+    width: 90%;
+  }
 }
 
 .review__box:nth-child(3) {
@@ -30,6 +36,9 @@
   width: 350px;
   height: 250px;
   border-radius: 10px;
+  @include respond(tab-land) {
+    width: 90%;
+  }
 }
 
 .review__box:nth-child(4) h5,
@@ -37,6 +46,9 @@
 .review__box:nth-child(6) h5 {
   font-size: 1.2rem;
   font-weight: 600;
+  @include respond(tab-land) {
+    font-size: 1rem;
+  }
 }
 
 .review__box:nth-child(7) p,
@@ -45,6 +57,12 @@
   font-size: 1rem;
   width: 90%;
   line-height: 1.4rem;
+  @include respond(tab-land) {
+    font-size: 0.9rem;
+  }
+  @include respond(tab-land) {
+    font-size: 0.8rem;
+  }
 }
 
 .review__box:nth-child(10) i,
@@ -54,6 +72,9 @@
   margin-right: 0.3rem;
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  @include respond(tab-land) {
+    font-size: 1.2rem;
+  }
 }
 
 .review__box:nth-child(10) span,
@@ -62,6 +83,12 @@
   font-size: 1.1rem;
   font-weight: 600;
   position: relative;
+  @include respond(tab-land) {
+    font-size: 1rem;
+  }
+  @include respond(tab-land) {
+    font-size: 0.8rem;
+  }
   &::after {
     display: inline-block;
     content: "";

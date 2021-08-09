@@ -203,7 +203,7 @@ table {
 */
 .entire__container {
   padding: 1rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .entire__container {
       padding: 0; } }
 
@@ -289,6 +289,9 @@ main {
   flex-direction: column;
   justify-content: space-between;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
+  @media (max-width: 68.75em) {
+    .header__container {
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
 
 .header__column:first-child {
   width: 100%;
@@ -328,18 +331,23 @@ main {
     .section__first {
       padding: 2rem 1rem;
       gap: 1rem; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 68.75em) {
     .section__first {
-      width: 40%; } }
+      flex-direction: column; } }
 
 .section__column {
   width: 50%; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 68.75em) {
     .section__column {
       width: 100%; } }
 
 .section__column:last-child {
   position: relative; }
+  @media (max-width: 68.75em) {
+    .section__column:last-child {
+      display: flex;
+      justify-content: center;
+      width: 100%; } }
 
 .section__img {
   transition: all 0.3s ease-in-out;
@@ -348,6 +356,9 @@ main {
   @media (max-width: 75em) {
     .section__img {
       width: 15rem; } }
+  @media (max-width: 68.75em) {
+    .section__img {
+      display: none; } }
   .section__img:hover {
     transform: scale(1.05);
     z-index: 100;
@@ -406,10 +417,16 @@ main {
   transform: skewY(-7deg); }
   .section__feature > * {
     transform: skewY(7deg); }
+  @media (max-width: 75em) {
+    .section__feature {
+      margin-top: 4rem; } }
 
 .feature__container {
   display: flex;
   padding: 0 4rem; }
+  @media (max-width: 75em) {
+    .feature__container {
+      padding: 0 2rem; } }
 
 .feature__box {
   width: 17rem;
@@ -422,6 +439,9 @@ main {
   transition: all 0.2s ease-in; }
   .feature__box:not(:last-child) {
     margin-right: 3rem; }
+    @media (max-width: 75em) {
+      .feature__box:not(:last-child) {
+        margin-right: 1rem; } }
   .feature__box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -451,14 +471,17 @@ main {
 .review {
   height: 100vh;
   padding: 12rem 5rem; }
-  @media (max-width: 75em) {
+  @media (max-width: 87.5em) {
     .review {
       padding: 12rem 2rem; } }
+  @media (max-width: 75em) {
+    .review {
+      padding: 12rem 0.5rem; } }
   .review__column {
     margin-left: 3rem; }
     @media (max-width: 75em) {
       .review__column {
-        margin-left: 0; } }
+        margin-left: 2rem; } }
   .review__column {
     margin-bottom: 3rem; }
   .review__header {
@@ -539,6 +562,9 @@ main {
   width: 350px;
   max-height: 250px;
   border-radius: 10px; }
+  @media (max-width: 75em) {
+    .review__box:first-child {
+      width: 90%; } }
 
 .review__box:nth-child(2) {
   background-image: url("../src/lucy.jpg");
@@ -547,6 +573,9 @@ main {
   width: 350px;
   height: 250px;
   border-radius: 10px; }
+  @media (max-width: 75em) {
+    .review__box:nth-child(2) {
+      width: 90%; } }
 
 .review__box:nth-child(3) {
   background-image: url("../src/kyle.jpg");
@@ -555,12 +584,20 @@ main {
   width: 350px;
   height: 250px;
   border-radius: 10px; }
+  @media (max-width: 75em) {
+    .review__box:nth-child(3) {
+      width: 90%; } }
 
 .review__box:nth-child(4) h5,
 .review__box:nth-child(5) h5,
 .review__box:nth-child(6) h5 {
   font-size: 1.2rem;
   font-weight: 600; }
+  @media (max-width: 75em) {
+    .review__box:nth-child(4) h5,
+    .review__box:nth-child(5) h5,
+    .review__box:nth-child(6) h5 {
+      font-size: 1rem; } }
 
 .review__box:nth-child(7) p,
 .review__box:nth-child(8) p,
@@ -568,6 +605,16 @@ main {
   font-size: 1rem;
   width: 90%;
   line-height: 1.4rem; }
+  @media (max-width: 75em) {
+    .review__box:nth-child(7) p,
+    .review__box:nth-child(8) p,
+    .review__box:nth-child(9) p {
+      font-size: 0.9rem; } }
+  @media (max-width: 75em) {
+    .review__box:nth-child(7) p,
+    .review__box:nth-child(8) p,
+    .review__box:nth-child(9) p {
+      font-size: 0.8rem; } }
 
 .review__box:nth-child(10) i,
 .review__box:nth-child(11) i,
@@ -576,6 +623,11 @@ main {
   margin-right: 0.3rem;
   font-size: 1.4rem;
   margin-bottom: 1rem; }
+  @media (max-width: 75em) {
+    .review__box:nth-child(10) i,
+    .review__box:nth-child(11) i,
+    .review__box:last-child i {
+      font-size: 1.2rem; } }
 
 .review__box:nth-child(10) span,
 .review__box:nth-child(11) span,
@@ -583,6 +635,16 @@ main {
   font-size: 1.1rem;
   font-weight: 600;
   position: relative; }
+  @media (max-width: 75em) {
+    .review__box:nth-child(10) span,
+    .review__box:nth-child(11) span,
+    .review__box:last-child span {
+      font-size: 1rem; } }
+  @media (max-width: 75em) {
+    .review__box:nth-child(10) span,
+    .review__box:nth-child(11) span,
+    .review__box:last-child span {
+      font-size: 0.8rem; } }
   .review__box:nth-child(10) span::after,
   .review__box:nth-child(11) span::after,
   .review__box:last-child span::after {
