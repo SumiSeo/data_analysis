@@ -21,11 +21,18 @@
     font-weight: 500;
     color: $font-color-grey;
     letter-spacing: 0.9;
+
     span {
       background-color: $primary-pink-light;
       padding: 0.4rem;
       margin-left: 0.5rem;
       color: white;
+    }
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.5rem;
     }
   }
   &__text {

@@ -52,8 +52,14 @@
   color: $font-color-grey;
   font-weight: 600;
   margin-bottom: 2rem;
+  @include respond(tab-land) {
+    font-size: 1rem;
+  }
 }
 
 .feature__info {
   font-size: 1.04rem;
+  @include respond(tab-land) {
+    font-size: 0.9rem;
+  }
 }

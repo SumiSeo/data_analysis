@@ -203,6 +203,9 @@ table {
 */
 .entire__container {
   padding: 1rem; }
+  @media (max-width: 56.25em) {
+    .entire__container {
+      padding: 0; } }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -321,9 +324,19 @@ main {
   padding-bottom: 10rem;
   padding-top: 2rem;
   gap: 2rem; }
+  @media (max-width: 75em) {
+    .section__first {
+      padding: 2rem 1rem;
+      gap: 1rem; } }
+  @media (max-width: 56.25em) {
+    .section__first {
+      width: 40%; } }
 
 .section__column {
   width: 50%; }
+  @media (max-width: 56.25em) {
+    .section__column {
+      width: 100%; } }
 
 .section__column:last-child {
   position: relative; }
@@ -332,6 +345,9 @@ main {
   transition: all 0.3s ease-in-out;
   position: absolute;
   box-shadow: 0 1rem 6rem 1rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .section__img {
+      width: 15rem; } }
   .section__img:hover {
     transform: scale(1.05);
     z-index: 100;
@@ -354,7 +370,10 @@ main {
   width: 18rem;
   height: 12rem;
   top: 1.5rem;
-  right: 3rem; }
+  left: 17rem; }
+  @media (max-width: 75em) {
+    .section__img:nth-child(2) {
+      left: 15rem; } }
 
 .section__img:nth-child(3) {
   background-image: url("../src/student3.jpg");
@@ -419,9 +438,15 @@ main {
   color: #3d3d3d;
   font-weight: 600;
   margin-bottom: 2rem; }
+  @media (max-width: 75em) {
+    .feature__title {
+      font-size: 1rem; } }
 
 .feature__info {
   font-size: 1.04rem; }
+  @media (max-width: 75em) {
+    .feature__info {
+      font-size: 0.9rem; } }
 
 .review {
   height: 100vh;
@@ -446,6 +471,12 @@ main {
       padding: 0.4rem;
       margin-left: 0.5rem;
       color: white; }
+    @media (max-width: 75em) {
+      .review__header {
+        font-size: 2rem; } }
+    @media (max-width: 56.25em) {
+      .review__header {
+        font-size: 1.5rem; } }
   .review__text {
     margin-top: 2rem;
     font-size: 1.3rem;

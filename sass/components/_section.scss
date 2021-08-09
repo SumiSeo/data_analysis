@@ -4,10 +4,20 @@
   padding-bottom: 10rem;
   padding-top: 2rem;
   gap: 2rem;
+  @include respond(tab-land) {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+  @include respond(tab-port) {
+    width: 40%;
+  }
 }
 
 .section__column {
   width: 50%;
+  @include respond(tab-port) {
+    width: 100%;
+  }
 }
 .section__column:last-child {
   position: relative;
@@ -17,7 +27,9 @@
   transition: all 0.3s ease-in-out;
   position: absolute;
   box-shadow: 0 1rem 6rem 1rem rgba(0, 0, 0, 0.2);
-
+  @include respond(tab-land) {
+    width: 15rem;
+  }
   &:hover {
     transform: scale(1.05);
     z-index: 100;
@@ -43,7 +55,10 @@
   width: 18rem;
   height: 12rem;
   top: 1.5rem;
-  right: 3rem;
+  left: 17rem;
+  @include respond(tab-land) {
+    left: 15rem;
+  }
 }
 
 .section__img:nth-child(3) {

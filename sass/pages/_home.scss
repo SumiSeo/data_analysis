@@ -1,6 +1,9 @@
 // @import "../abstracts/variables";
 .entire__container {
   padding: 1rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 body {
   font-family: "Montserrat", sans-serif;
