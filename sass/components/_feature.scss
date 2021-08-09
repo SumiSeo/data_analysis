@@ -53,6 +53,10 @@
   color: transparent;
   display: inline-block;
   margin-bottom: 2rem;
+  @include respond(tab-land) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .feature__title {
@@ -62,12 +66,13 @@
   margin-bottom: 2rem;
   @include respond(tab-land) {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
 .feature__info {
   font-size: 1.04rem;
   @include respond(tab-land) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
