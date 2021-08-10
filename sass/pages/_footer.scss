@@ -3,18 +3,39 @@
   margin-top: 15rem;
   padding: 0 5rem;
   background-color: $primary-pink-light;
+  @include respond(port-land) {
+    margin-top: 10rem;
+  }
+  @include respond(tab-port) {
+    margin-top: 8rem;
+  }
+  @include respond(tab-port) {
+    margin-top: 14rem;
+  }
   &__header {
     color: $font-color-grey;
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     letter-spacing: 1.2px;
+    @include respond(phone-tab) {
+      font-size: 1.8rem;
+    }
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
   }
   &__infos {
     font-size: 1.1rem;
     font-weight: 200;
     margin-bottom: 2rem;
     color: $color-white;
+    @include respond(phone-tab) {
+      font-size: 1rem;
+    }
+    @include respond(phone) {
+      font-size: 0.8rem;
+    }
   }
 
   &__form {
@@ -34,6 +55,14 @@
         font-size: 1rem;
         padding: 1.5rem 2rem;
       }
+
+      @include respond(phone-tab) {
+        font-size: 0.8rem;
+        padding: 1.5rem 2rem;
+      }
+      @include respond(phone) {
+        padding: 1rem 1rem;
+      }
     }
     select {
       padding: 1.5rem 4rem;
@@ -46,6 +75,13 @@
       @include respond(port-land) {
         font-size: 1rem;
         padding: 1.5rem 2rem;
+      }
+      @include respond(phone-tab) {
+        font-size: 0.8rem;
+        padding: 1.5rem 2rem;
+      }
+      @include respond(phone) {
+        padding: 1rem 1rem;
       }
     }
     button {
@@ -61,6 +97,13 @@
       @include respond(port-land) {
         font-size: 1rem;
         padding: 1.5rem 3rem;
+      }
+      @include respond(phone-tab) {
+        font-size: 0.8rem;
+        padding: 1.5rem 2rem;
+      }
+      @include respond(phone) {
+        padding: 1rem 1rem;
       }
     }
   }

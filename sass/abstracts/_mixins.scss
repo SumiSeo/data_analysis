@@ -16,6 +16,12 @@
       @content;
     }
   }
+  @if $breakpoint == phone-tab {
+    @media (max-width: 46.875em) {
+      //750px
+      @content;
+    }
+  }
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {
       //900px
