@@ -5,7 +5,7 @@
     padding: 12rem 2rem;
   }
   @include respond(tab-land) {
-    padding: 12rem 0.5rem;
+    padding: 10rem 0.5rem;
   }
   @include respond(port-land) {
     padding: 8rem 0.5rem;

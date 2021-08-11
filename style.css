@@ -347,10 +347,18 @@ main {
     .header__container {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
 
+.header__logo {
+  background-image: url("../src/logoBig.png");
+  background-size: cover;
+  background-position: center;
+  width: 70px;
+  height: 40px; }
+
 .header__column:first-child {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem; }
   .header__column:first-child .header__nav {
     width: 50px;
@@ -570,7 +578,7 @@ main {
       padding: 12rem 2rem; } }
   @media (max-width: 75em) {
     .review {
-      padding: 12rem 0.5rem; } }
+      padding: 10rem 0.5rem; } }
   @media (max-width: 68.75em) {
     .review {
       padding: 8rem 0.5rem; } }
@@ -757,6 +765,12 @@ main {
     .review__box:nth-child(11) i,
     .review__box:last-child i {
       font-size: 1rem; } }
+  @media (max-width: 37.5em) {
+    .review__box:nth-child(10) i,
+    .review__box:nth-child(11) i,
+    .review__box:last-child i {
+      font-size: 0.8rem;
+      margin-right: 0.05rem; } }
 
 .review__box:nth-child(10) span,
 .review__box:nth-child(11) span,
